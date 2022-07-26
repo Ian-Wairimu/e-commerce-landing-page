@@ -1,11 +1,17 @@
 import React from 'react';
-import Nav from "../navigation/nav";
 import "./app.css"
+import Header from "../header/header";
+import CheckBox from "../checkBox/checkBox";
+import About from "../about/about";
+import Footer from "../footer/footer";
 
 const App = () => {
     return (
         <>
-            <Nav />
+            <Header />
+            <CheckBox />
+            <About />
+            <Footer />
         </>
     )
 }

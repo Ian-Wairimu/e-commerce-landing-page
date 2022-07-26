@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #C6BFA5 !important;
+    padding: 40px;
+}
+input[type=checkbox] {
+    border: none;
+    cursor: pointer;
+    background-color: #C6BFA5 !important;
+}
+label {
+    padding: 20px;
+    color: black !important;
+    font-weight: 500;
+}
+.btn-product {
+    background-color: #661C14 !important;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    margin-left: auto;
+    font-weight: 700;
+}

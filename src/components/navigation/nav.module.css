@@ -1,3 +1,24 @@
-.navigation-container {
-    background-color: black;
+.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+}
+.logo {
+    margin-right: auto;
+}
+.nav, .list {
+    display: flex;
+    list-style-type: none;
+    border: none;
+}
+.items, .links {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }

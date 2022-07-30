@@ -5,10 +5,12 @@ const About = () => {
     return (
         <>
             <div className="about-container">
-                <div className="about-content">
-                    <h1 className="about-h1">ABOUT US</h1>
+                <fieldset className="about-content">
+                    <legend>
+                        <h1 className="about-h1">ABOUT US</h1>
+                    </legend>
                     <p className="about-p">This is where fashion is designed and crafted from the heart by an amazing team of craftsmen and designers who understand what fashion is</p>
-                </div>
+                </fieldset>
             </div>
             <section className="section">
                 <span className="section-logo">

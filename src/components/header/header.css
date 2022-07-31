@@ -34,9 +34,10 @@
     right: 50%;
     left: 50%;
 }
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 3em) and (max-width: 70em) {
     .header {
         background-size: cover;
+        object-fit: cover;
         height: 265px;
     }
     .content {
@@ -57,3 +58,26 @@
         bottom: 6px;
     }
 }
+/*@media (max-width: 70em) {*/
+/*    .header {*/
+/*        height: 500px;*/
+/*    }*/
+
+/*    .content {*/
+/*        margin-top: 150px;*/
+/*    }*/
+/*    .h1-head {*/
+/*        font-weight: 700;*/
+/*        color: white;*/
+/*        z-index: 2;*/
+/*        font-size: 3rem;*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+/*    .p-head {*/
+/*        font-weight: 300;*/
+/*        font-size: 1.2rem;*/
+/*    }*/
+/*    .click {*/
+/*        bottom: 6px;*/
+/*    }*/
+/*}*/

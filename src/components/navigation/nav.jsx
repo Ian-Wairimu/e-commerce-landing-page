@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './nav.css';
 import Logo from "../images/logo.png"
 import Cart from "../images/shop.png"
 import { Link } from 'react-router-dom';
 import {FaBars} from "react-icons/fa";
-
+import {ImCross} from "react-icons/im";
 
 const Nav = () => {
+    const [mobile, setMobile] = useState(false)
   return (
       <>
           <div className="container">
@@ -15,7 +16,7 @@ const Nav = () => {
                       <img src={Logo} alt="logo"/>
                   </Link>
               </span>
-              <nav className="nav">
+              <nav className={mobile? "nav-links-mobile" : "nav"} onClick={() => {setMobile(false)}}>
                   <ul className="list">
                       <li>
                           <Link to="/home" className="links">Home</Link>
@@ -30,8 +31,8 @@ const Nav = () => {
                       </li>
                   </ul>
               </nav>
-              <span className="open-btn">
-                  <FaBars />
+              <span className="open-btn" onClick={() => setMobile(!mobile)}>
+                  {mobile? <ImCross/> : <FaBars />}
               </span>
           </div>
       </>

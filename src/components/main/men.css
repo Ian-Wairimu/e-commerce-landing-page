@@ -112,7 +112,7 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 70em) {
     .men-container {
         margin: 20px;
         border-top: 1px solid transparent;

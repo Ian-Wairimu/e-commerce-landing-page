@@ -65,7 +65,7 @@
 .footer-img {
     padding: 10px;
 }
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 70em) {
     .footer {
         flex-direction: column;
         flex-wrap: wrap;

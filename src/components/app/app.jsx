@@ -1,21 +1,11 @@
 import React from 'react';
-import "./app.css"
-import Header from "../header/header";
-import CheckBox from "../checkBox/checkBox";
-import About from "../about/about";
-import Footer from "../footer/footer";
-import Men from "../main/men";
-import Women from "../main/women"
+import "./app.css";
+import Main from "../main/Main";
 
 const App = () => {
     return (
         <>
-            <Header />
-            <CheckBox />
-            <Men />
-            <Women />
-            <About />
-            <Footer />
+            <Main />
         </>
     )
 }

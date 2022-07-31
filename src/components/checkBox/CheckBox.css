@@ -6,10 +6,9 @@
     padding: 40px;
     margin-bottom: 80px;
 }
-input[type=checkbox] {
-    border: none;
-    cursor: pointer;
+input[type=checkbox]:checked {
     background-color: #C6BFA5 !important;
+    cursor: pointer;
 }
 label {
     padding: 20px;
@@ -24,4 +23,28 @@ label {
     border: none;
     margin-left: auto;
     font-weight: 700;
+}
+@media (min-width: 5em) and (max-width: 60em) {
+    .form {
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    input[type=checkbox]:checked {
+        background-color: #C6BFA5 !important;
+        cursor: pointer;
+    }
+    label {
+        padding: 10px;
+        font-weight: 400;
+    }
+    form {
+        margin-bottom: 15px;
+    }
+    .btn-product {
+        margin: auto;
+        align-self: center;
+    }
 }

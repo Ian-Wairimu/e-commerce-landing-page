@@ -1,12 +1,12 @@
 .men-container {
     display: block;
     position: relative;
-    width: 92%;
+    width: 90%;
     border: none;
     border-top: 2px solid #CBCBCB;
     margin: 80px;
 }
-.header {
+.header-men {
     position: absolute;
     left: 0;
     top: 0;
@@ -34,14 +34,15 @@
 }
 .men-clothing-con {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 10px;
 }
-.men-shirts {
+.men-clothing {
     display: block;
+    cursor: pointer;
     justify-content: center;
     width: 350px;
     background-color: #F5F5F7;
@@ -63,7 +64,14 @@
     text-align: center;
 }
 .drop-arrow {
+    align-items: center;
+    justify-content: center;
+}
+.img-drop {
+    width: 20px;
+    height: 20px;
     transform: rotate(90deg);
+    padding-top: 2px;
 }
 .div-color-p {
     display: inline-block;
@@ -97,10 +105,39 @@
 }
 .ts {
     color: #A89C76;
+    text-align: center;
 }
 .price {
     color: #6F6F6F;
     font-size: 1.5rem;
     font-weight: 700;
+}
+@media (min-width: 5em) and (max-width: 60em) {
+    .men-container {
+        margin: 20px;
+        border-top: 1px solid transparent;
+    }
+    .h1-men {
+        border-bottom: 3px solid #CBCBCB;
+    }
+    .header-men {
+        transform: translateY(-15px) translateX(-10px) scale(1);
+        z-index: 2;
+        margin-right: 5px;
+    }
+    .post-con {
+        margin-top: 30px;
+    }
+    .men-clothing-con {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+    .men-clothing {
+        margin-bottom: 20px;
+    }
+
 }
 

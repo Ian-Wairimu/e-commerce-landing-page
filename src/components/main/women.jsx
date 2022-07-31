@@ -3,12 +3,13 @@ import tShirt from "../images/tshirt_ladies.png"
 import shoe from "../images/trekkingshoes.png"
 import jacket from "../images/giacket.png"
 import "./women.css"
+import dropImg from "../images/angle-right-solid.svg";
 
 const Women = () => {
     return (
         <>
             <div className="women-container">
-                <div className="header">
+                <div className="header-w">
                     <h1 className="h1-women">WOMEN</h1>
                 </div>
                 <div className="post-con-left">
@@ -22,8 +23,9 @@ const Women = () => {
                 <div className="women-clothing-con">
                     <div className="clothing">
                         <div className="women-size">
-                            <h2 className="h-women-cloth">SIZE <span className="drop-arrow"> ❯
-                            </span></h2>
+                            <h2 className="h-women-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                         </div>
                         <div className="ts-img">
                             <img src={jacket} alt="jacket" />
@@ -37,8 +39,9 @@ const Women = () => {
                     </div>
                     <div className="clothing">
                         <div className="women-size">
-                            <h2 className="h-women-cloth">SIZE <span> ❯
-                            </span></h2>
+                            <h2 className="h-women-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                         </div>
                         <div className="ts-img">
                             <img src={shoe} alt="trekking shoe" className="shoe" />
@@ -52,11 +55,12 @@ const Women = () => {
                     </div>
                     <div className="clothing">
                         <div className="women-size">
-                            <h2 className="h-women-cloth">SIZE <span> ❯
-                            </span></h2>
+                            <h2 className="h-women-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                             <div className="color-circle">
-                                <div className="div-color bg-one"></div>
-                                <div className="div-color bg-two"></div>
+                                <div className="div-color bg-pk"></div>
+                                <div className="div-color bg-w"></div>
                             </div>
                         </div>
                         <div className="ts-img">

@@ -1,18 +1,18 @@
 .women-container {
     display: block;
     position: relative;
-    width: 92%;
+    width: 90%;
     border: none;
     border-top: 2px solid #CBCBCB;
-    margin: 80px;
+    margin: 20px;
 }
-.header {
+.header-w {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    transform: translateY(-20px) translateX(60px) scale(1);
+    transform: translateY(-12px) translateX(100px) scale(1);
     z-index: 2;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .h1-women {
     font-size: 1.2rem;
@@ -34,7 +34,7 @@
 }
 .women-clothing-con {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -42,6 +42,7 @@
 }
 .clothing {
     display: block;
+    cursor: pointer;
     justify-content: center;
     width: 350px;
     background-color: #F5F5F7;
@@ -61,7 +62,7 @@
     text-align: center;
 }
 .drop-arrow {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 .div-color {
     display: inline-block;
@@ -71,10 +72,10 @@
     border: none;
     border-radius: 100%;
 }
-.bg-one {
+.bg-pk {
     background-color: #D4A7AC;
 }
-.bg-two {
+.bg-w {
     background-color: #FFFFFF;
 }
 .ts-img {
@@ -100,5 +101,32 @@
     color: #6F6F6F;
     font-size: 1.5rem;
     font-weight: 700;
+}
+@media (min-width: 5em) and (max-width: 60em) {
+    .women-container {
+        margin: 20px;
+        border-top: 1px solid transparent;
+    }
+    .h1-women {
+        border-bottom: 3px solid #CBCBCB;
+    }
+    .post-con-left {
+        margin-top: 30px;
+    }
+    .header-w {
+        transform: translateY(-15px) translateX(10px) scale(1);
+        z-index: 2;
+        margin-left: 5px;
+    }
+    .women-clothing-con {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+    .clothing {
+        margin-bottom: 20px;
+    }
 }
 

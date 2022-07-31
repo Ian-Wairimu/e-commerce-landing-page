@@ -2,13 +2,14 @@ import React from 'react';
 import tShirt from "../images/tshirt.png"
 import pants from "../images/pants.png"
 import backPack from "../images/backpack.png"
+import dropImg from "../images/angle-right-solid.svg"
 import "./men.css"
 
 const Men = () => {
     return (
         <>
             <div className="men-container">
-                <div className="header">
+                <div className="header-men">
                 <h1 className="h1-men">MEN</h1>
                 </div>
                 <div className="post-con">
@@ -20,10 +21,11 @@ const Men = () => {
                     </div>
                 </div>
                 <div className="men-clothing-con">
-                    <div className="men-shirts one">
+                    <div className="men-clothing one">
                         <div className="men-size">
-                            <h2 className="h-men-cloth">SIZE <span className="drop-arrow"> ❯
-                            </span></h2>
+                            <h2 className="h-men-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                             <div className="color-circle">
                                 <div className="div-color-p bg-one"></div>
                                 <div className="div-color-p bg-two"></div>
@@ -40,10 +42,11 @@ const Men = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="men-shirts">
+                    <div className="men-clothing">
                         <div className="men-size">
-                            <h2 className="h-men-cloth">SIZE <span> ❯
-                            </span></h2>
+                            <h2 className="h-men-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                         </div>
                         <div className="ts-img">
                             <img src={pants} alt="pants" />
@@ -55,10 +58,11 @@ const Men = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="men-shirts">
+                    <div className="men-clothing">
                         <div className="men-size">
-                            <h2 className="h-men-cloth">SIZE <span> ❯
-                            </span></h2>
+                            <h2 className="h-men-cloth">SIZE
+                                <img src={dropImg} alt="angle drop" className="img-drop" />
+                            </h2>
                         </div>
                         <div className="ts-img">
                             <img src={backPack} alt="back-pack" />

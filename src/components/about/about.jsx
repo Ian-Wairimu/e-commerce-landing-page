@@ -1,6 +1,7 @@
 import React from 'react';
 import "./about.css";
 import Logo from '../images/twitter_bird.png'
+import Footer from "../footer/footer";
 const About = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const About = () => {
                     "SALE: Buy anything for 45% off. Use the promo CODE YOLOMY45 when you buy items"
                 </p>
             </section>
+            <Footer />
         </>
     );
 }

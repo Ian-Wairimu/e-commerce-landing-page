@@ -6,6 +6,9 @@
     height: 80px;
     padding: 20px;
 }
+.open-btn {
+    display: none;
+}
 .logo {
     margin-right: auto;
 }
@@ -13,6 +16,22 @@
     display: flex;
     list-style-type: none;
     border: none;
+}
+@media (min-width: 5em) and (max-width: 60em){
+    .nav {
+        display: none;
+    }
+    .open-btn {
+        display: block;
+        height: 20px;
+        color: white;
+        border: none;
+    }
+    .nav, .list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: none;
+    }
 }
 .items, .links {
     display: inline-block;
